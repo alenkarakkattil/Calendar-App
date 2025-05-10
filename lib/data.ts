@@ -2,33 +2,23 @@ import type { Event } from "./types"
 
 export const events: Event[] = [
   {
-    startTime: "00:00",
-    endTime: "01:30",
-    color: "#f6be23",
-    title: "Daily Standup",
-  },
-  {
-    startTime: "4:30",
-    endTime: "7:30",
-    color: "#f6501e",
-    title: "Weekly catchup",
-  },
-  {
-    startTime: "12:00",
-    endTime: "13:00",
-    color: "#029be5",
-    title: "Lunch Break",
-  },
-  {
-    startTime: "14:00",
-    endTime: "15:30",
-    color: "#0b8043",
-    title: "Project Planning",
-  },
-  {
-    startTime: "16:00",
-    endTime: "17:00",
-    color: "#7986cb",
+    id: "1",
     title: "Team Meeting",
+    description: "Weekly team sync",
+    date: new Date(),
+    startTime: "10:00",
+    endTime: "11:00",
+    color: "#3b82f6",
+    recurrence: "weekly",
+    notificationTime: 15
   },
-]
+  {
+    id: "2",
+    title: "Lunch with Sarah",
+    date: new Date(),
+    startTime: "12:30",
+    endTime: "13:30",
+    color: "#22c55e",
+    recurrence: "once"
+  }
+];
